@@ -8,6 +8,8 @@ export default function Navbar() {
       <ul>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/new">New show</NavLink></li>
+        <li><NavLink to="/signup">Sign up</NavLink></li>
+        <li><NavLink to="/login">Log in</NavLink></li>
         <li><NavLink onClick={() => navigate(-1)}>Go back</NavLink></li>
       </ul>
     </div>
