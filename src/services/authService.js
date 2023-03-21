@@ -22,11 +22,11 @@ class AuthService {
 
  
   login(user) {
-    return this.api.get('/login',user).then(({ data }) => data).catch(err => console.error(err));
+    return this.api.post('/login',user).then(({ data }) => data).catch(err => console.error(err));
   }
 
   me() {
-    return this.api.delete('/me').then((response) => response.data).catch(err => console.error(err));
+    return this.api.get('/me').then((response) => response.data).catch(err => console.error(err));
   }
 };
 
